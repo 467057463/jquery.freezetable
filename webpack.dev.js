@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
 
   output: {
-    filename: 'jquery.freezetable.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   }
 
