@@ -1,11 +1,5 @@
-import _ from 'lodash';
-import defaults from "./defaults.js";
+// import _ from 'lodash';
 import methods from './methods';
-
-console.log(methods)
-
-
-var mm = 'mmsssbbb'
 
 /*
 ----------------------------------------
