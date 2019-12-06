@@ -5,12 +5,25 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
-    "jquery.freezetable" : path.resolve(__dirname, './src/jquery.freezetable.js'),
+    "jquery.freezetable" : path.resolve(__dirname, './src/index'),
+  },
+
+  externals: {
+    lodash: {
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: 'lodash',
+      root: '_'
+    } 
   },
 
   module: {
     rules:[
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+      { 
+        test: /\.js$/, 
+        exclude: /node_modules/, 
+        loader: "babel-loader" 
+      }
     ]
   },
   
